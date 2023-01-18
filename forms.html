@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="B1.css">
 </head>
 <body>
-    <h1>Readme</h1>
-    <ul>
-        <li><strong>i am Mensios Weal</strong></li>
-        <li>Me 20 years</li>
-        <li>I am is beginer programmer</li>
-    </ul>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О себе</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Форма</a></li>
+            <li><a href="#">Помощь</a></li>
+        </ul>
+
+    </nav>
+    <div class="container">
+    <div class="info">
+        <h1>Readme</h1>
+     <img src="https://tocrypto.ru/content/uploads/2018/07/0001.jpg" class="avatar">
+        <ul>
+         <li><strong>i am Mensios Weal</strong></li>
+         <li>Me 20 years</li>
+         <li>I am is beginer programmer</li>
+         </ul>
+    </div>
     <h2>Forms</h2>
 
-    <form>
-        <div>
-            <label for="text1">Tekst</label>
-            <input type="text" id="text1" value="text by default" readonly>
-        </div>
-        <div>
-            <label for="email">email</label>
-            <input type="email" id="email" placeholder="input email">
-        </div>
+    <form class="text">
+        
         <div>
             <label for="password">password</label>
             <input type="password" id="password" placeholder="input password">
@@ -46,11 +55,7 @@
             <label for="color">color</label>
             <input type="color" id="color">
         </div>
-        <div>
-            <label for="message">message</label>
-            <br>
-            <textarea id="message" cols="15" rows="10"></textarea>
-        </div>
+        
         <div>
             <label for="sex">your sex</label>
             <select id="sex">
@@ -75,10 +80,32 @@
         </div>
 
         <!--input type="submit" value="send text">-->
-        <button type="submit">Send form</button>
-        <button type="submit">contact me</button>
+        <button type="submit" class="btn">Send form</button>
     </form>
+    </div>
+    <div class="contact">
 
+    <h2>Contact me</h2>
+        <div class="form-row">
 
+        <div class="form-group">
+            <label for="text">Ваше имя:</label>
+            <input type="text" id="text" placeholder="Введите имя">
+        </div>
+
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="Введите email">
+        </div>
+        
+        </div>
+
+        <div class="form-group">
+            <label for="message">message</label>
+            <textarea id="message" cols="25" rows="10" placeholder="Введите сообщение"></textarea>
+        </div>
+
+        
+    </div>
 </body>
 </html>
